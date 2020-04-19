@@ -8,3 +8,9 @@ Some key characteristics
   but will queue a lookup to later populate the cache.
 * The cache will track DNS lookups and automatically refresh entries that have been used
   when the TTL expires, and expunge records that have not been used.
+
+Possible TODO:
+* Blocking Lookups - wait for an entry to exist in the cache.
+* Allow the use of a custom resolver. This should also help with testing
+* Add other DNS lookup types (if this experiment proves useful)
+* Some form of cache size limit w/ early expiration. IE limit to 2M entries, purge LRU.
